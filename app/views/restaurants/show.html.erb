@@ -1,5 +1,5 @@
 <p><%= @restaurant.name %></p>
 <p><%= @restaurant.address %>
-<% @restaurant.pizzas.each do |pizza|%>
+<% @restaurant.pizzas.uniq.each do |pizza|%>
     <p><%= link_to pizza.name, pizza_path(pizza) %>
 <% end %>
