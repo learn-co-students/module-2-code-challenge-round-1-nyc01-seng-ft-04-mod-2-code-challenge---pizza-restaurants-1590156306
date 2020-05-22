@@ -106,7 +106,7 @@ X Update the error handling on the RestaurantPizza creation form to show this va
 
 ### 8. Advanced: Display Count of Restaurants on Pizza Index Page
 
-On the Pizza index page, display the number of Restaurants that have that Pizza next to each Pizza's name.
+X On the Pizza index page, display the number of Restaurants that have that Pizza next to each Pizza's name.
 
 ### 9. Advanced: Restaurant Average Pizza Price
 
