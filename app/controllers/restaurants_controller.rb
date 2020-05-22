@@ -4,28 +4,28 @@ class RestaurantsController < ApplicationController
     @restaurants = Restaurant.all
   end
 
-  def new
+  # def new
 
-  end
+  # end
 
-  def create
+  # def create
 
-  end
+  # end
 
-  def edit
+  # def edit
 
-  end
+  # end
 
-  def update
+  # def update
 
-  end
+  # end
 
   def show
     @restaurant = Restaurant.find(params[:id])
   end
 
-  def destroy
+  # def destroy
 
-  end
+  # end
 
 end

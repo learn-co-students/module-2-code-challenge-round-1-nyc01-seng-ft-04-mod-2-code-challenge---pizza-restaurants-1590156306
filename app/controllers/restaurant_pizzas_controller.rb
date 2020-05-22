@@ -1,7 +1,7 @@
 class RestaurantPizzasController < ApplicationController
 
     def index
-        
+        @restaurant_pizzas = RestaurantPizza.all
     end
     
     def new
@@ -19,21 +19,21 @@ class RestaurantPizzasController < ApplicationController
         end
     end
     
-    def edit
+    # def edit
     
-    end
+    # end
     
-    def update
+    # def update
     
-    end
+    # end
     
-    def show
+    # def show
         
-    end
+    # end
     
-    def destroy
+    # def destroy
     
-    end
+    # end
 
     private
 
