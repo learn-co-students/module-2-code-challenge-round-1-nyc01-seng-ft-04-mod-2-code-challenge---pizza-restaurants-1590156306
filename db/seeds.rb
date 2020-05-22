@@ -9,6 +9,8 @@
 #   1
 Restaurant.destroy_all
  
+puts "making restaurants"
+
 restaurants = [{
   name: "Sottocasa NYC",
   address: "298 Atlantic Ave, Brooklyn, NY 11201",
@@ -71,4 +73,10 @@ pizzas = [
 
 pizzas.each do |p|
   Pizza.create!(p)
+end
+
+puts "making RestaurantPizza"
+
+20.times do
+  RestaurantPizza.create(restaurant_id: Restaurant.all.sample.id, pizza_id: Pizza.all.sample.id, price: rand(5..10))
 end
