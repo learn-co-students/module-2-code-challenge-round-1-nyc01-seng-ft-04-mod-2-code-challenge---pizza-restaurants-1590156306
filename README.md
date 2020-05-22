@@ -89,7 +89,7 @@ Add controller actions and views necessary to show a form to associate a Pizza w
 
 After submitting, the user should be redirected to the selected Restaurant's show page. - DONE
 
-### 6. RestaurantPizza Validation
+### 6. RestaurantPizza Validation - DONE
 
 Add validations to the RestaurantPizza model so that each RestaurantPizza must have:
 
@@ -104,7 +104,7 @@ A Pizza should only be associated with the same Restaurant once. (It wouldn't ma
 Add a validation to RestaurantPizza to ensure that each Pizza can only appear once on the same Restaurant's menu.
 Update the error handling on the RestaurantPizza creation form to show this validation error.
 
-### 8. Advanced: Display Count of Restaurants on Pizza Index Page
+### 8. Advanced: Display Count of Restaurants on Pizza Index Page - DONE
 
 On the Pizza index page, display the number of Restaurants that have that Pizza next to each Pizza's name.
 

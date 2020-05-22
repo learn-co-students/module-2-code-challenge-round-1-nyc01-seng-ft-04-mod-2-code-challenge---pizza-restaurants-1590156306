@@ -2,6 +2,7 @@
 
 <p><%= @restaurant.address %></p>
 
+<p>Average pizza price: $<%= @restaurant.average_price %></p>
 <ul>
 <% @restaurant.pizzas.each do |pizza| %>
     <li><%= link_to  pizza.name, pizza_path(pizza) %> | $<%= RestaurantPizza.find_by(restaurant: @restaurant, pizza: pizza).price %></li>
