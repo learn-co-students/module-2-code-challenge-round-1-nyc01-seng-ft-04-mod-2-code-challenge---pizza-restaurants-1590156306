@@ -80,14 +80,14 @@ Update the code of the application to meet the following deliverables. Follow RE
 
 ### 5. RestaurantPizza Form
 
-Add controller actions and views necessary to show a form to associate a Pizza with a Restaurant. The user can:
+<!-- Add controller actions and views necessary to show a form to associate a Pizza with a Restaurant. The user can: -->
 
-- Choose an existing Pizza from a select dropdown
-- Choose an existing Restaurant from a select dropdown
-- Enter a numeric price
-- Click a button to save the RestaurantPizza association
+<!-- - Choose an existing Pizza from a select dropdown -->
+<!-- - Choose an existing Restaurant from a select dropdown -->
+<!-- - Enter a numeric price -->
+<!-- - Click a button to save the RestaurantPizza association -->
 
-After submitting, the user should be redirected to the selected Restaurant's show page.
+<!-- After submitting, the user should be redirected to the selected Restaurant's show page. -->
 
 ### 6. RestaurantPizza Validation
 

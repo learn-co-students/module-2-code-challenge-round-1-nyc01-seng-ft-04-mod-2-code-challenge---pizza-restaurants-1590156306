@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   get '/pizzas', to: 'pizzas#index'
   get '/pizzas/:id', to: 'pizzas#show', as: 'pizza'
 
+  get '/restaurant_pizzas/new', to: 'restaurant_pizzas#new'
+  post '/restaurant_pizzas', to: 'restaurant_pizzas#create'
 
 end
