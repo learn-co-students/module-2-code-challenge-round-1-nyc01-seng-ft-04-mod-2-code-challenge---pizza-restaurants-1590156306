@@ -1,0 +1,8 @@
+<h1> Restaurant info:</h1>>
+
+<%= @restaurant.name %><br>
+<%= @restaurant.address %><br>
+Pizza Types:
+<% @restaurant.pizzas.uniq.each do |pizza| %>
+<p><%= pizza.name %></p>
+<% end %>

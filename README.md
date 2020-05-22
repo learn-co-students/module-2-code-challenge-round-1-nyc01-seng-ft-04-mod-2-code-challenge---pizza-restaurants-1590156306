@@ -59,11 +59,11 @@ Each Restaurant can have many Pizzas and each Pizza can belong to multiple Resta
 
 - A Pizza can be sold at many Restaurants
 - A Restaurant can sell many Pizzas
-- RestaurantPizza stores an integer price for each pizza (Remember, each Restaurant can choose how to price its own Pizzas)
+- RestaurantPizza stores an integer price for each pizza (Remember, each Restaurant can choose how to price its own Pizzas) DONEEE
 
 ### 2. Pizza Show Page
 
-There should be a show page for each Pizza. It should display the name and ingredients.
+There should be a show page for each Pizza. It should display the name and ingredients. DONEEE
 
 ### 3. Restaurant Show Page
 
@@ -72,11 +72,11 @@ There should be a show page for each Restaurant. It should include:
 - the Restaurant's name and address
 - a list of the Pizzas it sells
 
-Each pizza in the list should link to that Pizza's show page.
+Each pizza in the list should link to that Pizza's show page. DONEE
 
 ### 4. Restaurants Index Page Links
 
-On the Restaurant index page, each Restaurant's name should link to the restaurant's show page.
+On the Restaurant index page, each Restaurant's name should link to the restaurant's show page. DONEE
 
 ### 5. RestaurantPizza Form
 
