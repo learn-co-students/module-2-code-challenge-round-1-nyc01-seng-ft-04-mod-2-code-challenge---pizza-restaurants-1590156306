@@ -38,7 +38,7 @@ class RestaurantPizzasController < ApplicationController
     private
 
     def restaurant_pizza_params
-        params.require(:restaurant_pizza).permit(:restaurant_id, :pizza_id)
+        params.require(:restaurant_pizza).permit(:restaurant_id, :pizza_id, :pizza_price)
     end
 
 end
