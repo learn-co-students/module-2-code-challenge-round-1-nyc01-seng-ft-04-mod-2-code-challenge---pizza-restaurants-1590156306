@@ -76,7 +76,7 @@ Each pizza in the list should link to that Pizza's show page.
 
 ### 4. Restaurants Index Page Links
 
-On the Restaurant index page, each Restaurant's name should link to the restaurant's show page.
+X On the Restaurant index page, each Restaurant's name should link to the restaurant's show page.
 
 ### 5. RestaurantPizza Form
 
