@@ -90,33 +90,51 @@ There should be a show page for each Restaurant. It should include:
 
 Each pizza in the list should link to that Pizza's show page. -->
 
-### 4. Restaurants Index Page Links
+<!-- ### 4. Restaurants Index Page Links
 
 - link_to each RESTAURANT SHOW in INDEX
 
-On the Restaurant index page, each Restaurant's name should link to the restaurant's show page.
+On the Restaurant index page, each Restaurant's name should link to the restaurant's show page. -->
 
-### 5. RestaurantPizza Form
+<!-- ### 5. RestaurantPizza Form
 
 Add controller actions and views necessary to show a form to associate a Pizza with a Restaurant. The user can:
+
+x- need RestaurantPizza NEW VIEW
+x    - need FORM (form_for)
+x    - pizza dropdown (collection_select)
+x    - restaurant dropdown (collection_select)
+x    - price (number_field)
+x    - button f.submit
+
+x - need RestaurantPizza NEW/CREATE CONTROLLERS/ROUTES
+x    - redirect_to selected restaurant
 
 - Choose an existing Pizza from a select dropdown
 - Choose an existing Restaurant from a select dropdown
 - Enter a numeric price
 - Click a button to save the RestaurantPizza association
 
-After submitting, the user should be redirected to the selected Restaurant's show page.
+After submitting, the user should be redirected to the selected Restaurant's show page. -->
 
-### 6. RestaurantPizza Validation
+<!-- ### 6. RestaurantPizza Validation
+
+x    - needs validation (validates, numericality:)
+x        - price between 1-30 (in model)
+x    - need flash hash to show error on form
+
 
 Add validations to the RestaurantPizza model so that each RestaurantPizza must have:
 
 - A price between 1 and 30
 - Add handling for this error to the RestaurantPizza create action
-- The validation error should be shown on the RestaurantPizza creation form when a user attempts to save a RestaurantPizza with an invalid price
+- The validation error should be shown on the RestaurantPizza creation form when a user attempts to save a RestaurantPizza with an invalid price -->
 
 ### 7. Advanced: Additional RestaurantPizza Validation
 
+    - needs validation
+        - unique pizza
+        
 A Pizza should only be associated with the same Restaurant once. (It wouldn't make sense for Pizza Hut to have Cheese Pizza listed on its menu twice!)
 
 Add a validation to RestaurantPizza to ensure that each Pizza can only appear once on the same Restaurant's menu.
