@@ -1,0 +1,21 @@
+<% if flash[:errors] %>
+<% flash[:errors].each do |error| %>
+<%= error %>
+<% end %>
+<% end %>
+
+<h2>Choose your Restaurant & Pizza</h2>
+
+<%= form_for @restaurant_pizza do |f| %>
+ <%= f.label :pizza_id %>
+ <%= f.collection_select :pizza_id, Pizza.all, :name, :id %>
+
+ <%= f.label :restaurant_id %>
+ <%= f.collection_select :restaurant_id, Restaurant.all, :name, :id %>
+
+<%= f.label :price, '$' %>
+<%= f.text_field :price %>
+
+<%= f.submit %>
+
+<% end %>
