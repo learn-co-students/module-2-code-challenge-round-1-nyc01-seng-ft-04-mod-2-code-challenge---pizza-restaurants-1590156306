@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 #
 #   1
-require 'faker'
 Restaurant.destroy_all
  
 restaurants = [{

@@ -87,7 +87,7 @@ Add controller actions and views necessary to show a form to associate a Pizza w
 - Enter a numeric price
 - Click a button to save the RestaurantPizza association
 
-After submitting, the user should be redirected to the selected Restaurant's show page.
+After submitting, the user should be redirected to the selected Restaurant's show page. DONEEE
 
 ### 6. RestaurantPizza Validation
 
@@ -95,24 +95,24 @@ Add validations to the RestaurantPizza model so that each RestaurantPizza must h
 
 - A price between 1 and 30
 - Add handling for this error to the RestaurantPizza create action
-- The validation error should be shown on the RestaurantPizza creation form when a user attempts to save a RestaurantPizza with an invalid price
+- The validation error should be shown on the RestaurantPizza creation form when a user attempts to save a RestaurantPizza with an invalid price DONEEE
 
 ### 7. Advanced: Additional RestaurantPizza Validation
 
 A Pizza should only be associated with the same Restaurant once. (It wouldn't make sense for Pizza Hut to have Cheese Pizza listed on its menu twice!)
 
 Add a validation to RestaurantPizza to ensure that each Pizza can only appear once on the same Restaurant's menu.
-Update the error handling on the RestaurantPizza creation form to show this validation error.
+Update the error handling on the RestaurantPizza creation form to show this validation error. DONEEE
 
 ### 8. Advanced: Display Count of Restaurants on Pizza Index Page
 
-On the Pizza index page, display the number of Restaurants that have that Pizza next to each Pizza's name.
+On the Pizza index page, display the number of Restaurants that have that Pizza next to each Pizza's name. DONEEE
 
 ### 9. Advanced: Restaurant Average Pizza Price
 
 Show the average price of a Pizza on the Restaurant show page. 
 
-To calculate the average, add up all of the Restaurant's Pizzas' prices, and then divide by the number of Pizzas.
+To calculate the average, add up all of the Restaurant's Pizzas' prices, and then divide by the number of Pizzas. nope
 
 ### Feature Demo
 
