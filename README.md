@@ -29,29 +29,29 @@ The starter code has migrations, models, and seed data for the initial Pizza and
 
 Once you have followed the setup instructions above, visiting the `/restaurants` route will display all of the Restaurants. Similarly, visiting `/pizzas` will list all the pizzas.
 
-***Schema***
+**_Schema_**
 
 Restaurant
 
-| Column | Type |
-| ------------- | ------------- |
-| name | String |
+| Column  | Type   |
+| ------- | ------ |
+| name    | String |
 | address | String |
 
 Pizza
 
-| Column | Type |
-| ------------- | ------------- |
-| name  | String  |
-| ingredients | String  |
-| created_at  | DateTime  |
-| updated_at  | DateTime  |
+| Column      | Type     |
+| ----------- | -------- |
+| name        | String   |
+| ingredients | String   |
+| created_at  | DateTime |
+| updated_at  | DateTime |
 
 ## Instructions
 
 Update the code of the application to meet the following deliverables. Follow RESTful naming conventions and the MVC pattern to divide responsibility.
 
-***Read through these deliverables carefully to understand the requirements for this code challenge. Tackle them one by one, as they build on each other sequentially.***
+**_Read through these deliverables carefully to understand the requirements for this code challenge. Tackle them one by one, as they build on each other sequentially._**
 
 ### 1. Create the RestaurantPizza Association
 
@@ -110,7 +110,7 @@ On the Pizza index page, display the number of Restaurants that have that Pizza 
 
 ### 9. Advanced: Restaurant Average Pizza Price
 
-Show the average price of a Pizza on the Restaurant show page. 
+Show the average price of a Pizza on the Restaurant show page.
 
 To calculate the average, add up all of the Restaurant's Pizzas' prices, and then divide by the number of Pizzas.
 
