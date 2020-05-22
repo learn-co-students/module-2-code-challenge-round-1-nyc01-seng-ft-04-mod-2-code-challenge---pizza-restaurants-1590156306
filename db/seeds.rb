@@ -72,8 +72,9 @@ pizzas = [
 pizzas.each do |p|
   Pizza.create!(p)
 end
-RestaurantPizza.create(pizza_id:Pizza.all.sample.id, restaurant_id:Restaurant.all.sample.id)
-RestaurantPizza.create(pizza_id:Pizza.all.sample.id, restaurant_id:Restaurant.all.sample.id)
-RestaurantPizza.create(pizza_id:Pizza.all.sample.id, restaurant_id:Restaurant.all.sample.id)
 
-end
+RestaurantPizza.destroy_all
+
+RestaurantPizza.create(pizza_id:Pizza.all.sample.id, restaurant_id:Restaurant.all.sample.id, price:1)
+RestaurantPizza.create(pizza_id:Pizza.all.sample.id, restaurant_id:Restaurant.all.sample.id, price:2)
+RestaurantPizza.create(pizza_id:Pizza.all.sample.id, restaurant_id:Restaurant.all.sample.id, price:3)
