@@ -1,10 +1,4 @@
 Rails.application.routes.draw do
-  # get 'restaurant_pizzas/new'
-
-  # get 'restaurant_pizzas/create'
-
-  #get '/restaurants', to: 'restaurants#index'
-  #get '/pizzas', to: 'pizzas#index'
 
   resources :pizzas, only: [:index, :show]
 
