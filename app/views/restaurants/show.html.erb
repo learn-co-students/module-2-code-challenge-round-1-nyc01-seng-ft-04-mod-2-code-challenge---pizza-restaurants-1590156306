@@ -5,7 +5,7 @@ Restaurant Address:  <%= @restaurant.address %><br>
 <br>
 Pizza Types:
 
-<% @restaurant.pizzas.each do |pizza| %>
+<% @restaurant.pizzas.uniq.each do |pizza| %>
 <p><%= pizza.name %></p>
 <% end %>
 
