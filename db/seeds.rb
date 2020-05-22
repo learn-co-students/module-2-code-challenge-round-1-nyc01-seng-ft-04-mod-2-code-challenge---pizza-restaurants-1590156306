@@ -8,6 +8,9 @@
 #
 #   1
 Restaurant.destroy_all
+Pizza.destroy_all
+RestaurantPizza.destroy_all
+
  
 puts "making restaurants"
 
@@ -70,6 +73,8 @@ pizzas = [
     ingredients: "Dough, Sauce, Cheese, Red Peppers, Green Peppers, Onions, Mushrooms"
   }
 ]
+
+puts  "making pizzas"
 
 pizzas.each do |p|
   Pizza.create!(p)
