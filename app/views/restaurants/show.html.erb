@@ -1,6 +1,6 @@
  <h1><%=@restaurant.name%></h1>
  <h2><%=@restaurant.address%></h2>
-
+<p>Average Pizza Price:<%=@restaurant.price_avg%></p>
  <h3>Menu:</h3>
 
  <%@restaurant.pizzas.each do |pizza|%>
