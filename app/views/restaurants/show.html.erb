@@ -1,0 +1,15 @@
+<h1>Restaurant Information:</h1>
+
+<h3>Name: <%= @restaurant.name %></h3>
+
+<h3>Address: <%= @restaurant.address %></h3>
+
+<h3>Pizzas: </h3>
+
+<ul>
+    <% @restaurant.pizzas.each do |pizza| %>
+        <li><%= link_to pizza.name, pizza_path(pizza.id) %></li>
+    <% end %>
+</ul>
+
+<h3>Average Pizza Price: $<%= @restaurant.average_price%></h3>
