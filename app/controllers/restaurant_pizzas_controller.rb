@@ -10,7 +10,7 @@ class RestaurantPizzasController < ApplicationController
         redirect_to restaurant_path(@restaurantpizza.restaurant.id)
         else 
             flash[:errors] = @restaurantpizza.errors.full_messages
-            redirect_to new_restaurantpizza_path
+            redirect_to new_restaurant_pizza_path
         end
     end
 

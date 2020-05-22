@@ -2,5 +2,8 @@
 
 <h2>Our Pizzas:</h2>
 <% @restaurants.pizzas.each do |p|%>
-<%=link_to p.name, pizza_path(p.id)%>
+<P><%=link_to p.name, pizza_path(p.id)%></P>
 <%end%>
+
+<h3>We're Affordable!</h3>
+<P>Our average pizza price is: $<%=@restaurants.avg_price%></P>
