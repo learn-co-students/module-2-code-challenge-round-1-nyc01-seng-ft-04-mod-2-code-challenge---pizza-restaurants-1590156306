@@ -75,11 +75,9 @@ pizzas.each do |p|
 end
 
 
-  
 Restaurant.all.each do |rest|
   5.times do 
-    RestaurantPizza.create(restaurant_id:rest.id,pizza_id:Pizza.all.sample.id,price:rand(5..16))
-
+    RestaurantPizza.create(restaurant_id:rest.id,pizza_id:Pizza.all.sample.id,price:rand(1..30))
   end
 end
 
