@@ -94,8 +94,8 @@ X After submitting, the user should be redirected to the selected Restaurant's s
 Add validations to the RestaurantPizza model so that each RestaurantPizza must have:
 
 - A price between 1 and 30
-- Add handling for this error to the RestaurantPizza create action
-- The validation error should be shown on the RestaurantPizza creation form when a user attempts to save a RestaurantPizza with an invalid price
+X Add handling for this error to the RestaurantPizza create action
+X The validation error should be shown on the RestaurantPizza creation form when a user attempts to save a RestaurantPizza with an invalid price
 
 ### 7. Advanced: Additional RestaurantPizza Validation
 

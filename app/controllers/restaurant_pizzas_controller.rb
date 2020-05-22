@@ -10,7 +10,13 @@ class RestaurantPizzasController < ApplicationController
     
     def create
         @restaurant_pizza = RestaurantPizza.create(restaurant_pizza_params)
-        redirect_to restaurant_path(@restaurant_pizza.restaurant.id)
+        if @restaurant_pizza.valid?
+            flash[:success] = "Restaurant Pizza Association Created"
+            redirect_to restaurant_path(@restaurant_pizza.restaurant.id)
+        else
+            flash[:errors] = @restaurant_pizza.errors.full_messages
+            redirect_to new_restaurant_pizza_path
+        end
     end
     
     def edit

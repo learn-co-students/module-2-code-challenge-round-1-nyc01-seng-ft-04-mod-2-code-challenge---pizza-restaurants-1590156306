@@ -1,4 +1,9 @@
 <h1>New Restaurant Pizza Association</h1>
+    
+<% if flash[:errors] %>
+<%= flash[:errors] %>
+<% end %><br>
+<br>
 
 <%= form_for @restaurant_pizza do |f| %>
     <%= f.label :restaurant_id, 'Restaurant' %>

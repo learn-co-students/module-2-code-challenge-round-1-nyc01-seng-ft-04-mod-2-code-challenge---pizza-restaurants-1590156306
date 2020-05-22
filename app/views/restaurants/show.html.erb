@@ -1,5 +1,10 @@
 <h1>Restaurant</h1>
 
+<% if flash[:success] %>
+<%= flash[:success] %>
+<% end %><br>
+<br>
+
 <%= @restaurant.name %><br>
 <%= @restaurant.address %><br>
 <br>
