@@ -4,12 +4,12 @@
 
 <%= form_for @restaurant_pizza do |f| %>
 
-    <%= f.label :restaurant_id, 'Restaurant Name' %>
+    <%= f.label :restaurant_id, 'Your Restaurant Name!' %>
     <%= f.collection_select :restaurant_id, Restaurant.all, :id,:name %>
-    <%= f.label :pizza_id, 'Tell me your PIZZA!' %>
+    <%= f.label :pizza_id, 'Tell me your PIZZA!!' %>
     <%= f.collection_select :pizza_id, Pizza.all, :id,:name %>
 
-    <%= f.label :price, 'For How Much!' %>
+    <%= f.label :price, 'For How Much!!!' %>
     <%= f.number_field :price %>
 
     <%= f.submit %>
