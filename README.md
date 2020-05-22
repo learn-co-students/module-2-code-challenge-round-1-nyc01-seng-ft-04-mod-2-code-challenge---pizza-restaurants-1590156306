@@ -69,8 +69,8 @@ X There should be a show page for each Pizza. It should display the name and ing
 
 There should be a show page for each Restaurant. It should include:
 
-- the Restaurant's name and address
-- a list of the Pizzas it sells
+X the Restaurant's name and address
+X a list of the Pizzas it sells
 
 Each pizza in the list should link to that Pizza's show page.
 
