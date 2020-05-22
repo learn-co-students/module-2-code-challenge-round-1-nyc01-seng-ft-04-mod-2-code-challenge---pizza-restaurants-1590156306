@@ -3,6 +3,9 @@
 Address: <%= @restaurant.address %> <br> <br>
 
 <h1>Pizzas:</h1>
-<% @restaurant.pizzas do |pizza| %>
-    <%= link_to pizza.name, pizza_path(pizza) %>
+
+<ul>
+<% @restaurant.pizzas.uniq.each do |pizza| %>
+   <li> <%= link_to pizza.name, pizza_path(pizza) %> </li> <br>
 <% end %>
+</ul>
