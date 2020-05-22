@@ -63,7 +63,7 @@ X RestaurantPizza stores an integer price for each pizza (Remember, each Restaur
 
 ### 2. Pizza Show Page
 
-There should be a show page for each Pizza. It should display the name and ingredients.
+X There should be a show page for each Pizza. It should display the name and ingredients.
 
 ### 3. Restaurant Show Page
 
