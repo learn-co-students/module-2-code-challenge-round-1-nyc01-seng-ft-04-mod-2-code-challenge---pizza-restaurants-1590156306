@@ -82,12 +82,12 @@ X On the Restaurant index page, each Restaurant's name should link to the restau
 
 Add controller actions and views necessary to show a form to associate a Pizza with a Restaurant. The user can:
 
-- Choose an existing Pizza from a select dropdown
-- Choose an existing Restaurant from a select dropdown
-- Enter a numeric price
-- Click a button to save the RestaurantPizza association
+X Choose an existing Pizza from a select dropdown
+X Choose an existing Restaurant from a select dropdown
+X Enter a numeric price
+X Click a button to save the RestaurantPizza association
 
-After submitting, the user should be redirected to the selected Restaurant's show page.
+X After submitting, the user should be redirected to the selected Restaurant's show page.
 
 ### 6. RestaurantPizza Validation
 

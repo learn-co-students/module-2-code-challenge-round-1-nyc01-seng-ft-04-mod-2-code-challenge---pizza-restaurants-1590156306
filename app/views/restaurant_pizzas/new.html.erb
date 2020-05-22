@@ -1,0 +1,15 @@
+<h1>New Restaurant Pizza Association</h1>
+
+<%= form_for @restaurant_pizza do |f| %>
+    <%= f.label :restaurant_id, 'Restaurant' %>
+    <%= f.collection_select :restaurant_id, Restaurant.all, :id, :name %>
+
+    <%= f.label :pizza_id, 'Pizza' %>
+    <%= f.collection_select :pizza_id, Pizza.all, :id, :name %>
+
+    <%= f.label :pizza_price, 'Pizza' %>
+    <%= f.number_field :pizza_price %>
+
+    <%= f.submit %>
+<% end %>
+
