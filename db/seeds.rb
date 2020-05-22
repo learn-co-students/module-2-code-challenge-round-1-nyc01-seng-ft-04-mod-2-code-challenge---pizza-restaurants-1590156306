@@ -7,7 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 #
 #   1
+puts "destroying restaurant"
 Restaurant.destroy_all
+puts "destroying pizza"
+Pizza.destroy_all
+puts "destroying association"
+RestaurantPizza.destroy_all
  
 restaurants = [{
   name: "Sottocasa NYC",
@@ -22,6 +27,7 @@ restaurants = [{
   address: "1559 2nd Ave, New York, NY 10028"
 }]
 
+puts "creating restaurants"
 restaurants.each do |r|
   Restaurant.create!(r)
 end
@@ -69,6 +75,12 @@ pizzas = [
   }
 ]
 
+puts "creating pizza"
 pizzas.each do |p|
   Pizza.create!(p)
+end
+
+puts"creating associations"
+5.times do
+  RestaurantPizza.create(price:rand(1..30), restaurant_id:Restaurant.all.sample.id, pizza_id:Pizza.all.sample.id)
 end

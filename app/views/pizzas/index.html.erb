@@ -5,4 +5,11 @@
       <%= pizza.name %>
   </h1>
   <p>Ingredients: <%= pizza.ingredients %></p>
+  <p>Currently Sold at the Following Locations</p>
+      <% @restaurants.each do |r| %>
+          <p><%= link_to r.name, restaurant_path(r) %></p>
+  
+      <% end %>
 <% end %>
+
+

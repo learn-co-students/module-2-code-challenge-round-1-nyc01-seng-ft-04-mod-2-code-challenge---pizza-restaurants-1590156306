@@ -1,0 +1,6 @@
+<h1><%= @restaurant.name%>'s Show Page </h1>
+<% @restaurant.pizzas.each do |p| %>
+    <p><%= link_to p.name, pizza_path(p) %></p>
+<% end %>
+
+<h5> Our Average Pizza Price is: $<%=@restaurant.avg_pizza_price%></h5>
