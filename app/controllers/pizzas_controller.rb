@@ -35,9 +35,3 @@ class PizzasController < ApplicationController
 end
 
 
-private
-def pizza_params
-params.require(:pizza).permit(:name, :ingredients)
-
-end
-

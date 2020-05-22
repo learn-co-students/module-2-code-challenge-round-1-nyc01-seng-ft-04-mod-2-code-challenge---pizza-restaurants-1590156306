@@ -10,8 +10,12 @@ class RestaurantPizzasController < ApplicationController
     def create
     @restaurant_pizza = Restaurant_pizza.create(restaurant_pizza_params)
 
-    redirect_to restaurant_path()
-    
+    if restaurant.pizza valid?
+    redirect_to restaurant_path(@restaurant)
+
+    else 
+    flash[restaurant_pizza_errors] = errors.full_messages
+    redirect to new_restaurant_path
         
     end
 

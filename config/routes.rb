@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :pizzas, only: [:index, :show]
-  resources :restaurants, only
+  resources :restaurants, only [:new, :create]
   resources :restaurant_pizzas, only: [:new, :create]
 
   # get '/restaurants', to: 'restaurants#index'

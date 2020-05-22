@@ -2,6 +2,7 @@
 
 <%= form_for @restaurant_pizza do |f| %>
 
+if @restaurant_pizza 
 f.label :pizza_id
 f.collection_select :pizza_id, Pizza.all, :id, :name
 
@@ -12,5 +13,8 @@ f.label :price
 f.integer :price
 
 f.submit
+
+else flas (out of time)
     
+
 <% end %>
