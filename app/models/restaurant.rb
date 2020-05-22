@@ -4,12 +4,12 @@ class Restaurant < ApplicationRecord
 
 
 
-    def average_price # will equal to return value of average pizza price
-        @total = []
-        Self.restaurant_pizzas.each do |pizza|
-            @pizza_price = pizza.price #price of one pizza
-        end
-    end
+    # def average_price # will equal to return value of average pizza price
+    #     @total = []
+    #     Self.restaurant_pizzas.each do |pizza|
+    #         @pizza_price = pizza.price #price of one pizza
+    #     end
+    # end
 
 
     # ### 9. Advanced: Restaurant Average Pizza Price

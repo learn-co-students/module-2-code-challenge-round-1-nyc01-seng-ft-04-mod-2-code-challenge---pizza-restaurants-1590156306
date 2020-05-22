@@ -132,8 +132,8 @@ Add validations to the RestaurantPizza model so that each RestaurantPizza must h
 
 <!-- ### 7. Advanced: Additional RestaurantPizza Validation
 
-    - needs validation
-        - unique pizza
+x    - needs validation
+x        - unique pizza
 
 A Pizza should only be associated with the same Restaurant once. (It wouldn't make sense for Pizza Hut to have Cheese Pizza listed on its menu twice!)
 
@@ -142,7 +142,7 @@ Update the error handling on the RestaurantPizza creation form to show this vali
 <!-- 
 ### 8. Advanced: Display Count of Restaurants on Pizza Index Page
 
-    - pizza.restaurants.uniq.count
+x    - pizza.restaurants.uniq.count
 
 On the Pizza index page, display the number of Restaurants that have that Pizza next to each Pizza's name. -->
 
