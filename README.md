@@ -72,7 +72,7 @@ There should be a show page for each Restaurant. It should include:
 X the Restaurant's name and address
 X a list of the Pizzas it sells
 
-Each pizza in the list should link to that Pizza's show page.
+X Each pizza in the list should link to that Pizza's show page.
 
 ### 4. Restaurants Index Page Links
 
