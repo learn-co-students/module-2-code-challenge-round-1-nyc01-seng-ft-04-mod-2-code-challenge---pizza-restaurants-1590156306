@@ -1,4 +1,5 @@
 <h1 style='margin-top:100px;font-size:2rem'>Our official pizza directory</h1>
+<%=link_to "Add New Pizza & Restaurant", new_restaurant_pizza_path%>
 
 <% @pizzas.each do |pizza| %>
   <h1 style='font-size:1.5rem;margin-top:50px'>Pizza Name:
@@ -10,4 +11,3 @@
 <% end %>
 
 <br>
-<%=link_to "Add New Pizza & Restaurant", new_restaurant_pizza_path%>
