@@ -1,3 +1,9 @@
+
+<% if flash[:success] %>
+<p><%= flash[:success] %></p>
+<%end%>
+
+
 <h1>Restaurant: <%=@restaurant.name %></h1>
 
 <h2>Address: <%= @restaurant.address %></h2>
@@ -5,5 +11,10 @@
 
 <h3>Pizzas</h3>
 
+<% if @restaurant.pizzas %>
+<% @restaurant.pizzas.each do |pizza| %>
+<p>Name:  <%=link_to pizza.name, pizza_path(pizza) %></p>
+<%end%>
+<%end%>
 
 
