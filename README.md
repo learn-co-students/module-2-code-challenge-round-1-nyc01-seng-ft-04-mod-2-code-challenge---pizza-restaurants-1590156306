@@ -112,7 +112,7 @@ On the Pizza index page, display the number of Restaurants that have that Pizza 
 
 Show the average price of a Pizza on the Restaurant show page. 
 
-To calculate the average, add up all of the Restaurant's Pizzas' prices, and then divide by the number of Pizzas. NOT DONEEE
+To calculate the average, add up all of the Restaurant's Pizzas' prices, and then divide by the number of Pizzas. nope NOT DONEEE
 
 ### Feature Demo
 
