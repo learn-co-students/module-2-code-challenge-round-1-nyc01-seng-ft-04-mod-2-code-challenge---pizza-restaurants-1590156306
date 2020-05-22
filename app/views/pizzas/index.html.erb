@@ -1,8 +1,8 @@
 <h1 style='margin-top:100px;font-size:2rem'>Our official pizza directory</h1>
 
 <% @pizzas.each do |pizza| %>
-  <h1 style='font-size:1.5rem;margin-top:50px'>Pizza Name:
-      <%= link_to  pizza.name, pizza_path(pizza) %> | Number of restaurants offered at: <%= pizza.restaurants.count %>
+  <h1 style='font-size:1.5rem;margin-top:50px'>
+      <%= link_to  pizza.name, pizza_path(pizza) %> | Offered at <%= pizza.restaurants.count %> restaurant(s)
   </h1>
   <p>Ingredients: <%= pizza.ingredients %></p>
 <% end %>

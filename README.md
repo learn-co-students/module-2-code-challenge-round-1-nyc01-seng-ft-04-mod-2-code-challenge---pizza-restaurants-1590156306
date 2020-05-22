@@ -97,7 +97,7 @@ Add validations to the RestaurantPizza model so that each RestaurantPizza must h
 - Add handling for this error to the RestaurantPizza create action
 - The validation error should be shown on the RestaurantPizza creation form when a user attempts to save a RestaurantPizza with an invalid price
 
-### 7. Advanced: Additional RestaurantPizza Validation
+### 7. Advanced: Additional RestaurantPizza Validation - DONE
 
 A Pizza should only be associated with the same Restaurant once. (It wouldn't make sense for Pizza Hut to have Cheese Pizza listed on its menu twice!)
 

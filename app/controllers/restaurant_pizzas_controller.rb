@@ -1,6 +1,6 @@
 class RestaurantPizzasController < ApplicationController
   def new
-    @pizzas = Pizza.all
+    @pizzas = Pizza.all.uniq
     @restaurants = Restaurant.all
     @restaurant_pizza = RestaurantPizza.new
   end

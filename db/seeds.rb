@@ -8,6 +8,7 @@
 #
 #   1
 Restaurant.destroy_all
+Pizza.destroy_all
  
 restaurants = [{
   name: "Sottocasa NYC",
@@ -73,80 +74,3 @@ pizzas.each do |p|
   Pizza.create!(p)
 end
 
-assoc = [
-  {
-    pizza: Pizza.all.sample, 
-    restaurant: Restaurant.all.sample,
-    price: rand(30)
-  },
-  {
-    pizza: Pizza.all.sample, 
-    restaurant: Restaurant.all.sample,
-    price: rand(30)
-  },
-  {
-    pizza: Pizza.all.sample, 
-    restaurant: Restaurant.all.sample,
-    price: rand(30)
-  },
-  {
-    pizza: Pizza.all.sample, 
-    restaurant: Restaurant.all.sample,
-    price: rand(30)
-  },
-  {
-    pizza: Pizza.all.sample, 
-    restaurant: Restaurant.all.sample,
-    price: rand(30)
-  },
-  {
-    pizza: Pizza.all.sample, 
-    restaurant: Restaurant.all.sample,
-    price: rand(30)
-  },
-  {
-    pizza: Pizza.all.sample, 
-    restaurant: Restaurant.all.sample,
-    price: rand(30)
-  },
-  {
-    pizza: Pizza.all.sample, 
-    restaurant: Restaurant.all.sample,
-    price: rand(30)
-  },
-  {
-    pizza: Pizza.all.sample, 
-    restaurant: Restaurant.all.sample,
-    price: rand(30)
-  },
-  {
-    pizza: Pizza.all.sample, 
-    restaurant: Restaurant.all.sample,
-    price: rand(30)
-  },
-  {
-    pizza: Pizza.all.sample, 
-    restaurant: Restaurant.all.sample,
-    price: rand(30)
-  },
-  {
-    pizza: Pizza.all.sample, 
-    restaurant: Restaurant.all.sample,
-    price: rand(30)
-  },
-  {
-    pizza: Pizza.all.sample, 
-    restaurant: Restaurant.all.sample,
-    price: rand(30)
-  },
-  {
-    pizza: Pizza.all.sample, 
-    restaurant: Restaurant.all.sample,
-    price: rand(30)
-  },
-  
-]
-
-assoc.each do |assoc|
-  RestaurantPizza.create!(assoc)
-end
