@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  resources :restaurants
-  resources :pizzas
-  resources :restaurant_pizzas
+  resources :restaurants, only: [:index, :show]
+  resources :pizzas, only: [:index, :show]
+  resources :restaurant_pizzas, only: [:new, :create, :edit, :update]
 
 end

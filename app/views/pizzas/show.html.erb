@@ -3,3 +3,15 @@
 <h2>Ingredients used:</h2>
 
 <%= @pizza.ingredients %>
+
+<p></p>
+
+<h2>Restaurants you can find it at:</h2>
+
+<ul>
+<% @pizza.restaurants.each do |rest| %>
+<li><%= link_to  rest.name, restaurant_path(rest) %></li>
+
+<% end %>
+
+</ul>
