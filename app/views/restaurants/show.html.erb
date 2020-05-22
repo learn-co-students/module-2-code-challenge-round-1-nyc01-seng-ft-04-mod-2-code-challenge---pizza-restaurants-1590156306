@@ -1,0 +1,10 @@
+<h1><%= @restaurant.name %></h1>
+
+<p><%= @restaurant.address %></p>
+
+<ul>
+<% @restaurant.pizzas.each do |pizza| %>
+    <li><%= link_to  pizza.name, pizza_path(pizza) %> | $<%= RestaurantPizza.find_by(restaurant: @restaurant, pizza: pizza).price %></li>
+<% end %>
+
+</ul>

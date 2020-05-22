@@ -72,3 +72,81 @@ pizzas = [
 pizzas.each do |p|
   Pizza.create!(p)
 end
+
+assoc = [
+  {
+    pizza: Pizza.all.sample, 
+    restaurant: Restaurant.all.sample,
+    price: rand(30)
+  },
+  {
+    pizza: Pizza.all.sample, 
+    restaurant: Restaurant.all.sample,
+    price: rand(30)
+  },
+  {
+    pizza: Pizza.all.sample, 
+    restaurant: Restaurant.all.sample,
+    price: rand(30)
+  },
+  {
+    pizza: Pizza.all.sample, 
+    restaurant: Restaurant.all.sample,
+    price: rand(30)
+  },
+  {
+    pizza: Pizza.all.sample, 
+    restaurant: Restaurant.all.sample,
+    price: rand(30)
+  },
+  {
+    pizza: Pizza.all.sample, 
+    restaurant: Restaurant.all.sample,
+    price: rand(30)
+  },
+  {
+    pizza: Pizza.all.sample, 
+    restaurant: Restaurant.all.sample,
+    price: rand(30)
+  },
+  {
+    pizza: Pizza.all.sample, 
+    restaurant: Restaurant.all.sample,
+    price: rand(30)
+  },
+  {
+    pizza: Pizza.all.sample, 
+    restaurant: Restaurant.all.sample,
+    price: rand(30)
+  },
+  {
+    pizza: Pizza.all.sample, 
+    restaurant: Restaurant.all.sample,
+    price: rand(30)
+  },
+  {
+    pizza: Pizza.all.sample, 
+    restaurant: Restaurant.all.sample,
+    price: rand(30)
+  },
+  {
+    pizza: Pizza.all.sample, 
+    restaurant: Restaurant.all.sample,
+    price: rand(30)
+  },
+  {
+    pizza: Pizza.all.sample, 
+    restaurant: Restaurant.all.sample,
+    price: rand(30)
+  },
+  {
+    pizza: Pizza.all.sample, 
+    restaurant: Restaurant.all.sample,
+    price: rand(30)
+  },
+  
+]
+
+assoc.each do |assoc|
+  RestaurantPizza.create!(assoc)
+end

@@ -21,7 +21,7 @@ Before you begin coding your solution, clone this repo and then `cd` into it. Th
 
 There are three models in the domain: Restaurant, Pizza, and a join model RestaurantPizza.
 
-Each Restaurant can have many Pizzas. Each Pizza can belong to multiple Restaurants.
+Each Restaurant can have many Pizzas. Each Pizza can belong to multiple Restaurants. Res --< Join >-- Pizza
 
 ## What You Already Have
 
@@ -57,37 +57,37 @@ Update the code of the application to meet the following deliverables. Follow RE
 
 Each Restaurant can have many Pizzas and each Pizza can belong to multiple Restaurants. Each Restaurant can set the price of a Pizza to an integer. Update the schema and models to create the RestaurantPizza relationship so that:
 
-- A Pizza can be sold at many Restaurants
-- A Restaurant can sell many Pizzas
-- RestaurantPizza stores an integer price for each pizza (Remember, each Restaurant can choose how to price its own Pizzas)
+- A Pizza can be sold at many Restaurants - DONE
+- A Restaurant can sell many Pizzas - DONE
+- RestaurantPizza stores an integer price for each pizza (Remember, each Restaurant can choose how to price its own Pizzas) - DONE
 
-### 2. Pizza Show Page
+### 2. Pizza Show Page - DONE
 
-There should be a show page for each Pizza. It should display the name and ingredients.
+There should be a show page for each Pizza. It should display the name and ingredients. - DONE
 
-### 3. Restaurant Show Page
+### 3. Restaurant Show Page - DONE
 
 There should be a show page for each Restaurant. It should include:
 
-- the Restaurant's name and address
-- a list of the Pizzas it sells
+- the Restaurant's name and address - DONE
+- a list of the Pizzas it sells - DONE
 
-Each pizza in the list should link to that Pizza's show page.
+Each pizza in the list should link to that Pizza's show page. - DONE
 
-### 4. Restaurants Index Page Links
+### 4. Restaurants Index Page Links - DONE
 
-On the Restaurant index page, each Restaurant's name should link to the restaurant's show page.
+On the Restaurant index page, each Restaurant's name should link to the restaurant's show page. DONE
 
-### 5. RestaurantPizza Form
+### 5. RestaurantPizza Form - DONE
 
 Add controller actions and views necessary to show a form to associate a Pizza with a Restaurant. The user can:
 
-- Choose an existing Pizza from a select dropdown
-- Choose an existing Restaurant from a select dropdown
-- Enter a numeric price
-- Click a button to save the RestaurantPizza association
+- Choose an existing Pizza from a select dropdown - DONE
+- Choose an existing Restaurant from a select dropdown - DONE
+- Enter a numeric price - DONE
+- Click a button to save the RestaurantPizza association - DONE
 
-After submitting, the user should be redirected to the selected Restaurant's show page.
+After submitting, the user should be redirected to the selected Restaurant's show page. - DONE
 
 ### 6. RestaurantPizza Validation
 
