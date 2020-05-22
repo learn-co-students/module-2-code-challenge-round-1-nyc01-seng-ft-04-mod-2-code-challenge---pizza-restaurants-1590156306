@@ -4,6 +4,6 @@
 
 <ul> Pizzas:
     <% @restaurant.pizzas.each do |pizza| %>
-    <li>link_to pizza.name, pizza_path(pizza) </li>
+    <li><%=link_to pizza.name, pizza_path(pizza) %></li>
     <% end %>
 </ul>
