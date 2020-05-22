@@ -8,6 +8,7 @@
 #
 #   1
 Restaurant.destroy_all
+Pizza.destroy_all
  
 restaurants = [{
   name: "Sottocasa NYC",
@@ -21,7 +22,7 @@ restaurants = [{
   name: "San Matteo NYC",
   address: "1559 2nd Ave, New York, NY 10028"
 }]
-
+".....building restaurants!"
 restaurants.each do |r|
   Restaurant.create!(r)
 end
@@ -68,7 +69,11 @@ pizzas = [
     ingredients: "Dough, Sauce, Cheese, Red Peppers, Green Peppers, Onions, Mushrooms"
   }
 ]
-
+puts "....making pizza"
 pizzas.each do |p|
   Pizza.create!(p)
+end
+
+25.times do
+ RestaurantPizza.create(pizza_id: Pizza.all.sample.id, restaurant_id: Restaurant.all.sample.id)
 end
