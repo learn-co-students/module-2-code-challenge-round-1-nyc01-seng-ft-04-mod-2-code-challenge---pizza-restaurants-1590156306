@@ -2,9 +2,9 @@
 
 <% if flash[:errors] %>
     <% flash[:errors].each do |error| %>
-        <%= error %>
+        <p><%= error %></p>
     <% end %>
-<% end %> <br>
+<% end %>
 
 <%= form_for @restaurant_pizza do |f| %>
     <%= f.label :pizza_id  %>
